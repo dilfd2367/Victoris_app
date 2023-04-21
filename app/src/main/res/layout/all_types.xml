@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="400dp"
+        android:layout_height="725dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/victorys_main" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="240dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/victorys_emblem" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#35D4A4"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Вход"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button156"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/comfortaa_bold"
+        android:shadowColor="#230303"
+        android:text="Регистрация"
+        android:textColor="@color/black"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#000000" />
+
+    <ScrollView
+        android:layout_width="330dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="300dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frame3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="153dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/russian" />
+
+                    <Button
+                        android:id="@+id/buttonVict3"
+                        android:layout_width="157dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#CFF1EE"
+                        android:text="Русский язык"
+                        android:textColor="#35D4A4" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="153dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/english" />
+
+                    <Button
+                        android:id="@+id/buttonVict4"
+                        android:layout_width="157dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#CFF1EE"
+                        android:text="Английский язык"
+                        android:textColor="#35D4A4" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="153dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/image_astro" />
+
+                    <Button
+                        android:id="@+id/buttonVict1"
+                        android:layout_width="157dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#CFF1EE"
+                        android:text="Астрономия"
+                        android:textColor="#35D4A4" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="153dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/numb" />
+
+                    <Button
+                        android:id="@+id/buttonVict2"
+                        android:layout_width="157dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#CFF1EE"
+                        android:text="Года"
+                        android:textColor="#35D4A4" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="100.0"
+        android:backgroundTint="#35D4A4"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Найти"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/search"
+        app:layout_constraintTop_toTopOf="@+id/search" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="192dp"
+        android:layout_weight="100.0"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_bold"
+        android:hint="Введите текст"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHighlight="#35D4A4"
+        android:textColorHint="#000000"
+        android:textColorLink="#35D4A4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

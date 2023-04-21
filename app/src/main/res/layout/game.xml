@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="431dp"
+        android:layout_height="737dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/victorys_main" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:gravity="center"
+        android:text="Текст вопроса"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:translationY="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_answer1"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#F47457"
+                android:fontFamily="@font/comfortaa"
+                android:text="Ответ 1"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/button_answer2"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#25E087"
+                android:fontFamily="@font/comfortaa"
+                android:text="Ответ 2"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_answer3"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#4AA5ED"
+                android:fontFamily="@font/comfortaa"
+                android:text="Ответ 3"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/button_anwer4"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#EAD736"
+                android:fontFamily="@font/comfortaa"
+                android:text="Ответ 4"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/victorys_emblem" />
+
+    <TextView
+        android:id="@+id/Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="556dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:gravity="center"
+        android:text="Категория"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="179dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#CFF1EE"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Дальше"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

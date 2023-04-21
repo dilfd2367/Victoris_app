@@ -3,8 +3,11 @@ package com.example.projectvictorys;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Nextmove1 extends AppCompatActivity {
@@ -22,6 +25,7 @@ public class Nextmove1 extends AppCompatActivity {
     private TextView question2;
     private TextView question3;
     private TextView question4;
+    private Button btn_goback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +33,7 @@ public class Nextmove1 extends AppCompatActivity {
         String MyScore = getIntent().getStringExtra("Score");
         TextView textScore = findViewById(R.id.Your_score);
         MainActivity.SCORE = MyScore;
+        btn_goback = findViewById(R.id.go_back);
         textScore.setText("Ваш результат: " + MyScore + "/4");
         text1 = findViewById(R.id.textAnswer1);
         text2 = findViewById(R.id.textAnswer2);
@@ -46,6 +51,13 @@ public class Nextmove1 extends AppCompatActivity {
         question2.setText("2. " + Victorin1[1].question_text);
         question3.setText("3. " + Victorin1[2].question_text);
         question4.setText("4. " + Victorin1[3].question_text);
+        btn_goback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Nextmove1.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
 }

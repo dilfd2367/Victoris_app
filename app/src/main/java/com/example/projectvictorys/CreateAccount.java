@@ -18,7 +18,7 @@ public class CreateAccount extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent y = new Intent(CreateAccount.this, Your_login.class);
+                Intent y = new Intent(CreateAccount.this, All_types.class);
                 EditText name = findViewById(R.id.login_input);
                 String your_name = name.getText().toString();
                 y.putExtra("Your_Login", your_name);

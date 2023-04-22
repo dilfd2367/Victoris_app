@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     public static String SCORE2 = "0";
     public static String SCORE3 = "0";
     public static String SCORE4 = "0";
+    public static String NICKNAME = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent a = new Intent(MainActivity.this, All_types.class);
+                Intent a = new Intent(MainActivity.this, Account.class);
                 startActivity(a);
             }
         });

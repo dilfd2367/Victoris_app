@@ -16,10 +16,9 @@ public class Your_login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.your_login);
-        String Your_Login = getIntent().getStringExtra("Your_Login");
         TextView text = findViewById(R.id.textView_your);
-        if (Your_Login.trim().length() != 0)
-        {text.setText(Your_Login);}
+        if (MainActivity.NICKNAME.trim().length() != 0)
+        {text.setText(MainActivity.NICKNAME);}
         TextView Scores1 = findViewById(R.id.Scores1);
         Scores1.setText("Ваш последний счёт: " + MainActivity.SCORE3 + "/5");
         TextView Scores2 = findViewById(R.id.Scores2);

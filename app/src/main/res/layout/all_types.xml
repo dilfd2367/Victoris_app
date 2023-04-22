@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <Button
+        android:id="@+id/go_back"
+        android:layout_width="179dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#CFF1EE"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Вернуться в начало"
+        android:textColor="#000000"
+        android:translationY="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="400dp"
@@ -28,33 +42,18 @@
         app:srcCompat="@drawable/victorys_emblem" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="57dp"
-        android:layout_marginStart="208dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/button_alltypes"
+        android:layout_width="148dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#35D4A4"
         android:fontFamily="@font/comfortaa_bold"
-        android:text="Вход"
+        android:text="Личный кабинет"
+        android:textColor="#FFFFFF"
         app:cornerRadius="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button156"
-        android:layout_width="wrap_content"
-        android:layout_height="57dp"
-        android:layout_marginStart="208dp"
-        android:layout_marginTop="80dp"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/comfortaa_bold"
-        android:shadowColor="#230303"
-        android:text="Регистрация"
-        android:textColor="@color/black"
-        app:cornerRadius="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#000000" />
 
     <ScrollView
         android:layout_width="330dp"

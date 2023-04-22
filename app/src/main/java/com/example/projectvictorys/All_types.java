@@ -4,26 +4,26 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import java.util.Locale;
 
 public class All_types extends AppCompatActivity {
+    private Button btn_goback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.all_types);
         View fr1 = findViewById(R.id.frame1);
         View fr2 = findViewById(R.id.frame2);
+        String Your_Login = getIntent().getStringExtra("Your_Login");
+        MainActivity.NICKNAME = Your_Login;
+        Button btn_account = findViewById(R.id.button_alltypes);
         View fr3 = findViewById(R.id.frame3);
         View fr4 = findViewById(R.id.frame4);
         Button btn6 = findViewById(R.id.buttonVict4);
-        Button btn4 = findViewById(R.id.button4);
-        Button btn = findViewById(R.id.button156);
         Button btn1 = findViewById(R.id.buttonVict1);
         Button btn2 = findViewById(R.id.buttonVict2);
         Button btn3 = findViewById(R.id.buttonVict3);
@@ -52,24 +52,10 @@ public class All_types extends AppCompatActivity {
                 }
             }
         });
-        btn4.setOnClickListener(new View.OnClickListener() {
+        btn_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent b = new Intent(All_types.this, Account.class);
-                startActivity(b);
-            }
-        });
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent b = new Intent(All_types.this, CreateAccount.class);
-                startActivity(b);
-            }
-        });
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent b = new Intent(All_types.this, Game.class);
+                Intent b = new Intent(All_types.this, Your_login.class);
                 startActivity(b);
             }
         });
@@ -107,6 +93,14 @@ public class All_types extends AppCompatActivity {
                 String vict_id = "4";
                 b.putExtra("ID_of_vict", vict_id);
                 startActivity(b);
+            }
+        });
+        btn_goback = findViewById(R.id.go_back);
+        btn_goback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(All_types.this, MainActivity.class);
+                startActivity(i);
             }
         });
     }

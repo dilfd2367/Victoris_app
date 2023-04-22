@@ -16,6 +16,15 @@ public class Your_login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.your_login);
+        Button btn_logout = findViewById(R.id.go_back);
+        btn_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                All_types.BUTTON_SCORE = 0;
+                Intent i = new Intent(Your_login.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
         TextView text = findViewById(R.id.textView_your);
         if (MainActivity.NICKNAME.trim().length() != 0)
         {text.setText(MainActivity.NICKNAME);}

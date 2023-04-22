@@ -12,14 +12,16 @@ import java.util.Locale;
 
 public class All_types extends AppCompatActivity {
     private Button btn_goback;
+    public static int BUTTON_SCORE = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.all_types);
         View fr1 = findViewById(R.id.frame1);
         View fr2 = findViewById(R.id.frame2);
+        if (All_types.BUTTON_SCORE == 1){
         String Your_Login = getIntent().getStringExtra("Your_Login");
-        MainActivity.NICKNAME = Your_Login;
+        MainActivity.NICKNAME = Your_Login;}
         Button btn_account = findViewById(R.id.button_alltypes);
         View fr3 = findViewById(R.id.frame3);
         View fr4 = findViewById(R.id.frame4);

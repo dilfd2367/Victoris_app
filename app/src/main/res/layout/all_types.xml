@@ -45,13 +45,14 @@
         android:id="@+id/button_alltypes"
         android:layout_width="148dp"
         android:layout_height="62dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#35D4A4"
         android:fontFamily="@font/comfortaa_bold"
         android:text="Личный кабинет"
         android:textColor="#FFFFFF"
         app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

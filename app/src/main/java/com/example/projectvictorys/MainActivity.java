@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        if (All_types.BUTTON_SCORE == 0){
+            All_types.BUTTON_SCORE += 1;
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,5 +36,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(a);
             }
         });
+        }
+        else {
+            All_types.BUTTON_SCORE += 1;
+            btn2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent a = new Intent(MainActivity.this, All_types.class);
+                    startActivity(a);
+                }
+            });
+        }
     }
 }

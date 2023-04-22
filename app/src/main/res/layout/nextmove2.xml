@@ -5,6 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="431dp"
+        android:layout_height="737dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/victorys_main" />
 
     <Button
         android:id="@+id/go_back"
@@ -14,9 +23,10 @@
         android:fontFamily="@font/comfortaa_bold"
         android:text="Вернуться в начало"
         android:textColor="#000000"
+        android:translationY="-25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="648dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView8"

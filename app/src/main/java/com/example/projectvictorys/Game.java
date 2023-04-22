@@ -657,7 +657,7 @@ public class Game extends AppCompatActivity {
                             @Override
                             public void onClick(View v) {
                                 currentIndex++;
-                                if (currentIndex == Victorin4.length){
+                                if (currentIndex == Victorin1.length){
                                     Intent i = new Intent(Game.this, Nextmove4.class);
                                     String Score = "" + CountAnswer;
                                     i.putExtra("Score", Score);
@@ -737,7 +737,7 @@ public class Game extends AppCompatActivity {
                             @Override
                             public void onClick(View v) {
                                 currentIndex++;
-                                if (currentIndex == Victorin4.length){
+                                if (currentIndex == Victorin1.length){
                                     Intent i = new Intent(Game.this, Nextmove4.class);
                                     String Score = "" + CountAnswer;
                                     i.putExtra("Score", Score);

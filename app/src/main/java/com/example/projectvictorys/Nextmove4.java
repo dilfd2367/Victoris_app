@@ -11,10 +11,10 @@ import android.widget.TextView;
 public class Nextmove4 extends AppCompatActivity {
     public DatabaseVictorina[] Victorin4 = new DatabaseVictorina[]{
             new DatabaseVictorina(1, 4, 1, "каша", "порог", "кукуруза", "стул", "Porridge"),
-            new DatabaseVictorina(1, 4, 2, "ритм","чудовище", "праздник", "стол", "Beast"),
-            new DatabaseVictorina(1, 4, 4, "срок хранения", "мягкость", "совесть", "безопасность", "Safety"),
-            new DatabaseVictorina(1, 4, 3, "утёнок", "блеск", "сплетня", "ритм", "Gossip"),
-            new DatabaseVictorina(1, 4, 1, "статья", "название", "артист", "мягкость", "Article"),
+            new DatabaseVictorina(2, 4, 2, "ритм","чудовище", "праздник", "стол", "Beast"),
+            new DatabaseVictorina(3, 4, 4, "срок хранения", "мягкость", "совесть", "безопасность", "Safety"),
+            new DatabaseVictorina(4, 4, 3, "утёнок", "блеск", "сплетня", "ритм", "Gossip"),
+            new DatabaseVictorina(5, 4, 1, "статья", "название", "артист", "мягкость", "Article"),
     };
     private TextView text1;
     private TextView text2;

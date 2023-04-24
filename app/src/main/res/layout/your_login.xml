@@ -8,13 +8,31 @@
 
     <Button
         android:id="@+id/go_back"
-        android:layout_width="179dp"
-        android:layout_height="61dp"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
         android:backgroundTint="#35D4AD"
         android:fontFamily="@font/comfortaa_bold"
         android:text="Выйти из аккаунта"
         android:textColor="#000000"
+        android:textSize="11sp"
+        android:translationX="100dp"
         android:translationY="-50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/go_back2"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#CFF1EE"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Вернуться назад"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        android:translationX="-100dp"
+        android:translationY="-25dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

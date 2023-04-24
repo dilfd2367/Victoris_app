@@ -34,7 +34,10 @@ public class Nextmove4 extends AppCompatActivity {
         setContentView(R.layout.nextmove4);
         String MyScore = getIntent().getStringExtra("Score");
         TextView textScore = findViewById(R.id.Your_score4);
-        MainActivity.SCORE4 = MyScore;
+        if (MainActivity.TYPE_GAME == 0){
+            MainActivity.SCORE4 = MyScore;}
+        else
+        {MainActivity.TYPE_GAME = 0;}
         textScore.setText("Ваш результат: " + MyScore + "/5");
         text1 = findViewById(R.id.textAnswer13);
         text2 = findViewById(R.id.textAnswer14);

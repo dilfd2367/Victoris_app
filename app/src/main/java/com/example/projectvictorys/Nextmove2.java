@@ -29,7 +29,10 @@ public class Nextmove2 extends AppCompatActivity {
         String MyScore = getIntent().getStringExtra("Score");
         TextView textScore = findViewById(R.id.Your_score2);
         textScore.setText("Ваш результат: " + MyScore + "/3");
-        MainActivity.SCORE2 = MyScore;
+        if (MainActivity.TYPE_GAME == 0){
+            MainActivity.SCORE2 = MyScore;}
+        else
+        {MainActivity.TYPE_GAME = 0;}
         text1 = findViewById(R.id.textAnswer5);
         text2 = findViewById(R.id.textAnswer6);
         text3 = findViewById(R.id.textAnswer7);

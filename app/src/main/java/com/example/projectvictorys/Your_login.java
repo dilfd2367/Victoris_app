@@ -17,10 +17,18 @@ public class Your_login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.your_login);
         Button btn_logout = findViewById(R.id.go_back);
+        Button btn_back = findViewById(R.id.go_back2);
         btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 All_types.BUTTON_SCORE = 0;
+                Intent i = new Intent(Your_login.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent i = new Intent(Your_login.this, MainActivity.class);
                 startActivity(i);
             }

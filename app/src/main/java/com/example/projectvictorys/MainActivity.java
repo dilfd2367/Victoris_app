@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     public static String SCORE3 = "0";
     public static String SCORE4 = "0";
     public static String NICKNAME = "";
+    public static int TYPE_GAME = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

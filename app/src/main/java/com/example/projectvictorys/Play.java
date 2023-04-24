@@ -37,6 +37,7 @@ public class Play extends AppCompatActivity {
 //                   e.printStackTrace();
 //                   return;
 //               }
+               MainActivity.TYPE_GAME = 1;
                Intent i = new Intent(Play.this, Game.class );
                EditText id_of = findViewById(R.id.id_of_victorin);
                String vict_id = id_of.getText().toString();

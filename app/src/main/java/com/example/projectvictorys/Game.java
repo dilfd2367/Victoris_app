@@ -238,7 +238,7 @@ public class Game extends AppCompatActivity {
                 }
             });
         }
-        else if (IdVictorina == 2) {
+        else if (IdVictorina == 29630) {
             Category.setText("Года");
             currentIndex = 0;
             CountAnswer = 0;

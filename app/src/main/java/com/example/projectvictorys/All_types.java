@@ -40,16 +40,16 @@ public class All_types extends AppCompatActivity {
                 fr3.setVisibility(View.INVISIBLE);
                 fr4.setVisibility(View.INVISIBLE);
                 fr1.setVisibility(View.INVISIBLE);
-                if ("астрономия".contains(Victorin)) {
+                if ("космос".contains(Victorin)) {
                     fr1.setVisibility(View.VISIBLE);
                 }
-                if ("года".contains(Victorin)){
+                if ("великие года".contains(Victorin)){
                     fr2.setVisibility(View.VISIBLE);
                 }
-                 if ("русский язык".contains(Victorin)){
+                 if ("спряжения".contains(Victorin)){
                     fr3.setVisibility(View.VISIBLE);
                 }
-                if ("английский язык".contains(Victorin)) {
+                if ("чудеса английского".contains(Victorin)) {
                     fr4.setVisibility(View.VISIBLE);
                 }
             }

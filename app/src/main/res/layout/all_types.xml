@@ -15,7 +15,6 @@
         android:fontFamily="@font/comfortaa_bold"
         android:text="Вернуться в начало"
         android:textColor="#000000"
-        android:translationY="25dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -32,8 +31,8 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="240dp"
-        android:layout_height="56dp"
+        android:layout_width="206dp"
+        android:layout_height="58dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -59,10 +58,10 @@
     <ScrollView
         android:layout_width="330dp"
         android:layout_height="390dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="250dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -95,7 +94,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
                         android:backgroundTint="#CFF1EE"
-                        android:text="Русский язык"
+                        android:text="Спряжения"
                         android:textColor="#35D4A4" />
 
                 </LinearLayout>
@@ -126,7 +125,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
                         android:backgroundTint="#CFF1EE"
-                        android:text="Английский язык"
+                        android:text="Чудеса английского"
                         android:textColor="#35D4A4" />
 
                 </LinearLayout>
@@ -157,7 +156,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
                         android:backgroundTint="#CFF1EE"
-                        android:text="Астрономия"
+                        android:text="Космос"
                         android:textColor="#35D4A4" />
 
                 </LinearLayout>
@@ -188,7 +187,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
                         android:backgroundTint="#CFF1EE"
-                        android:text="Года"
+                        android:text="Великие года"
                         android:textColor="#35D4A4" />
 
                 </LinearLayout>
@@ -215,7 +214,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="144dp"
         android:layout_weight="100.0"
         android:backgroundTint="#000000"
         android:ems="10"

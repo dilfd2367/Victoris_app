@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 public class Nextmove2 extends AppCompatActivity {
     public DatabaseVictorina[] Victorin2 = new DatabaseVictorina[]{
-            new DatabaseVictorina(1, 2, 1, "1961", "1691", "1965", "1963", "В каком году Юрий Гагарин полетел в космос?"),
-            new DatabaseVictorina(2, 2, 3, "1699", "1789", "1799", "1801", "В каком году родился Пушкин?"),
-            new DatabaseVictorina(3, 2, 2, "1985", "1812", "1900", "1712", "Год Отечественной войны с Наполеоном?"),
+            new DatabaseVictorina(1, 2, 1, "17098242 км²", "243610 км²", "9596960 км²", "312685 км²", "Площадь территории России?"),
+            new DatabaseVictorina(2, 2, 3, "Машук", "Народная", "Эльбрус", "Белуха", "Самая высокая гора России?"),
+            new DatabaseVictorina(3, 2, 2, "Ладожское", "Байкал", "Каспийское", "Онежское", "Самое глубокое озеро России?"),
     };
     private TextView text1;
     private TextView text2;

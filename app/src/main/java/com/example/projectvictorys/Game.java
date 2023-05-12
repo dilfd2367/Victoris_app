@@ -23,9 +23,9 @@ public class Game extends AppCompatActivity {
             new DatabaseVictorina(4, 1, 2, "Яблоня", "Большой пёс", "Коса", "Большой кот", "Выберите из этого название созвездия")
     };
     public DatabaseVictorina[] Victorin2 = new DatabaseVictorina[]{
-            new DatabaseVictorina(1, 2, 1, "1961", "1691", "1965", "1963", "В каком году Юрий Гагарин полетел в космос?"),
-            new DatabaseVictorina(2, 2, 3, "1699", "1789", "1799", "1801", "В каком году родился Пушкин?"),
-            new DatabaseVictorina(3, 2, 2, "1985", "1812", "1900", "1712", "Год Отечественной войны с Наполеоном?"),
+            new DatabaseVictorina(1, 2, 1, "17098242 км²", "243610 км²", "9596960 км²", "312685 км²", "Площадь территории России?"),
+            new DatabaseVictorina(2, 2, 3, "Машук", "Народная", "Эльбрус", "Белуха", "Самая высокая гора России?"),
+            new DatabaseVictorina(3, 2, 2, "Ладожское", "Байкал", "Каспийское", "Онежское", "Самое глубокое озеро России?"),
     };
     public DatabaseVictorina[] Victorin3 = new DatabaseVictorina[]{
             new DatabaseVictorina(1, 3, 2, "видеть", "брить", "гнать", "держать", "Выбери глагол относящийся к 1 спряжению"),
@@ -238,8 +238,8 @@ public class Game extends AppCompatActivity {
                 }
             });
         }
-        else if (IdVictorina == 29630) {
-            Category.setText("Года");
+        else if (IdVictorina == 2) {
+            Category.setText("Россия");
             currentIndex = 0;
             CountAnswer = 0;
             CountWrongAnswer = 0;

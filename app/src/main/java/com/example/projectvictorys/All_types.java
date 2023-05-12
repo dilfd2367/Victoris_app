@@ -1,8 +1,12 @@
 package com.example.projectvictorys;
 
+import static android.app.PendingIntent.getActivity;
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,31 +33,7 @@ public class All_types extends AppCompatActivity {
         Button btn1 = findViewById(R.id.buttonVict1);
         Button btn2 = findViewById(R.id.buttonVict2);
         Button btn3 = findViewById(R.id.buttonVict3);
-        Button btn5 = findViewById(R.id.searchButton);
-        btn5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EditText search = findViewById(R.id.search);
-                String Victorin = search.getText().toString();
-                Victorin = Victorin.toLowerCase(Locale.ROOT);
-                fr2.setVisibility(View.INVISIBLE);
-                fr3.setVisibility(View.INVISIBLE);
-                fr4.setVisibility(View.INVISIBLE);
-                fr1.setVisibility(View.INVISIBLE);
-                if ("космос".contains(Victorin)) {
-                    fr1.setVisibility(View.VISIBLE);
-                }
-                if ("великие года".contains(Victorin)){
-                    fr2.setVisibility(View.VISIBLE);
-                }
-                 if ("спряжения".contains(Victorin)){
-                    fr3.setVisibility(View.VISIBLE);
-                }
-                if ("чудеса английского".contains(Victorin)) {
-                    fr4.setVisibility(View.VISIBLE);
-                }
-            }
-        });
+
         btn_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

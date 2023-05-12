@@ -23,6 +23,10 @@ public class CreateAccount extends AppCompatActivity {
                 String your_name = name.getText().toString();
                 y.putExtra("Your_Login", your_name);
                 startActivity(y);
+                MainActivity.SCORE = "0";
+                MainActivity.SCORE2 = "0";
+                MainActivity.SCORE3 = "0";
+                MainActivity.SCORE4 = "0";
             }
         });
     }

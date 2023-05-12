@@ -53,6 +53,41 @@
             android:orientation="vertical">
 
             <FrameLayout
+                android:id="@+id/frame2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="153dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/russia" />
+
+                    <TextView
+                        android:id="@+id/Scores4"
+                        android:layout_width="194dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:gravity="center"
+                        android:text="Последний счёт"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
                 android:id="@+id/frame3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -154,40 +189,6 @@
 
             </FrameLayout>
 
-            <FrameLayout
-                android:id="@+id/frame2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="20dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView14"
-                        android:layout_width="153dp"
-                        android:layout_height="100dp"
-                        app:srcCompat="@drawable/numb" />
-
-                    <TextView
-                        android:id="@+id/Scores4"
-                        android:layout_width="194dp"
-                        android:layout_height="match_parent"
-                        android:fontFamily="@font/comfortaa_bold"
-                        android:gravity="center"
-                        android:text="Последний счёт"
-                        android:textColor="#000000"
-                        android:textSize="25dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/imageView7" />
-
-                </LinearLayout>
-
-            </FrameLayout>
-
         </LinearLayout>
     </ScrollView>
 
@@ -205,7 +206,7 @@
         android:id="@+id/imageView4"
         android:layout_width="262dp"
         android:layout_height="76dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"

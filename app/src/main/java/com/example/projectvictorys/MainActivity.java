@@ -11,7 +11,6 @@ public class MainActivity extends AppCompatActivity {
     public static String SCORE2 = "0";
     public static String SCORE3 = "0";
     public static String SCORE4 = "0";
-    public static String NICKNAME = "";
     public static int TYPE_GAME = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +30,13 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (All_types.BUTTON_SCORE == 0){
+                if (special.BUTTON_SCORE == 0){
                     Intent a = new Intent(MainActivity.this, Account.class);
                     startActivity(a);}
                 else {
-                            Intent a = new Intent(MainActivity.this, All_types.class);
-                            startActivity(a);
+                    Intent a = new Intent(MainActivity.this, All_types.class);
+                    startActivity(a);
                 }
-                All_types.BUTTON_SCORE += 1;
             }
         });
     }

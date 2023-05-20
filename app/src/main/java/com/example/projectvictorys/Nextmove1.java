@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Nextmove1 extends AppCompatActivity {
@@ -33,10 +34,9 @@ public class Nextmove1 extends AppCompatActivity {
         String MyScore = getIntent().getStringExtra("Score");
         TextView textScore = findViewById(R.id.Your_score);
         if (MainActivity.TYPE_GAME == 0){
-        MainActivity.SCORE = MyScore;}
+            MainActivity.SCORE = MyScore;}
         else
         {MainActivity.TYPE_GAME = 0;}
-        btn_goback = findViewById(R.id.go_back);
         textScore.setText("Ваш результат: " + MyScore + "/4");
         text1 = findViewById(R.id.textAnswer1);
         text2 = findViewById(R.id.textAnswer2);
@@ -54,9 +54,11 @@ public class Nextmove1 extends AppCompatActivity {
         question2.setText("2. " + Victorin1[1].question_text);
         question3.setText("3. " + Victorin1[2].question_text);
         question4.setText("4. " + Victorin1[3].question_text);
-        btn_goback.setOnClickListener(new View.OnClickListener() {
+        ImageButton return_back = findViewById(R.id.image_back8);
+        return_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent i = new Intent(Nextmove1.this, MainActivity.class);
                 startActivity(i);
             }

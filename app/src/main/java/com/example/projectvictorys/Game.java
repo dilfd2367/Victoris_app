@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -69,6 +70,14 @@ public class Game extends AppCompatActivity {
         Question = findViewById(R.id.textView4);
         Category = findViewById(R.id.Category);
         btn_next.setVisibility(View.INVISIBLE);
+        ImageButton return_back = findViewById(R.id.image_back7);
+        return_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Game.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
         if (IdVictorina == 1) {
             Category.setText("Астрономия");
             currentIndex = 0;
@@ -83,10 +92,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin1.length) {
-                                    Intent i = new Intent(Game.this, Nextmove1.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove1.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent1(currentIndex);
                         }
@@ -123,11 +132,11 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin1.length) {
-                                    Intent i = new Intent(Game.this, Nextmove1.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
-                                }
+                            Intent i = new Intent(Game.this, Nextmove1.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
+                        }
                         else {
                             UpdateContent1(currentIndex);
                         }
@@ -151,7 +160,7 @@ public class Game extends AppCompatActivity {
                                     startActivity(i);
                                 }
                                 else{
-                                UpdateContent1(currentIndex);}
+                                    UpdateContent1(currentIndex);}
                             }
                         });
                     }
@@ -164,10 +173,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin1.length) {
-                                    Intent i = new Intent(Game.this, Nextmove1.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove1.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent1(currentIndex);
                         }
@@ -204,10 +213,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin1.length) {
-                                    Intent i = new Intent(Game.this, Nextmove1.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove1.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent1(currentIndex);
                         }
@@ -252,10 +261,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin2.length) {
-                                    Intent i = new Intent(Game.this, Nextmove2.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove2.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent2(currentIndex);
                         }
@@ -292,10 +301,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin2.length) {
-                                    Intent i = new Intent(Game.this, Nextmove2.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove2.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent2(currentIndex);
                         }
@@ -332,10 +341,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin2.length) {
-                                    Intent i = new Intent(Game.this, Nextmove2.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove2.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent2(currentIndex);
                         }
@@ -372,10 +381,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin2.length) {
-                                    Intent i = new Intent(Game.this, Nextmove2.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove2.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent2(currentIndex);
                         }
@@ -420,10 +429,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin3.length) {
-                                    Intent i = new Intent(Game.this, Nextmove3.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove3.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent3(currentIndex);
                         }
@@ -459,10 +468,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin3.length) {
-                                    Intent i = new Intent(Game.this, Nextmove3.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove3.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent3(currentIndex);
                         }
@@ -498,10 +507,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin3.length) {
-                                    Intent i = new Intent(Game.this, Nextmove3.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove3.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent3(currentIndex);
                         }
@@ -538,10 +547,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin3.length) {
-                                    Intent i = new Intent(Game.this, Nextmove3.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove3.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent3(currentIndex);
                         }
@@ -585,10 +594,10 @@ public class Game extends AppCompatActivity {
                         currentIndex++;
                         CountAnswer++;
                         if (currentIndex == Victorin4.length) {
-                                    Intent i = new Intent(Game.this, Nextmove4.class);
-                                    String Score = "" + CountAnswer;
-                                    i.putExtra("Score", Score);
-                                    startActivity(i);
+                            Intent i = new Intent(Game.this, Nextmove4.class);
+                            String Score = "" + CountAnswer;
+                            i.putExtra("Score", Score);
+                            startActivity(i);
                         } else {
                             UpdateContent4(currentIndex);
                         }

@@ -6,6 +6,48 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="725dp"
+                app:srcCompat="@drawable/victorys_main" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="400dp"
+                android:layout_height="725dp"
+                app:srcCompat="@drawable/victorys_main" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="725dp"
+                app:srcCompat="@drawable/victorys_main" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="400dp"
+                android:layout_height="725dp"
+                app:srcCompat="@drawable/victorys_main" />
+        </LinearLayout>
+    </LinearLayout>
+
     <Button
         android:id="@+id/button_registr"
         android:layout_width="198dp"
@@ -22,28 +64,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:rippleColor="#000000" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="431dp"
-        android:layout_height="737dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/victorys_main" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="314dp"
-        android:layout_height="95dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:srcCompat="@drawable/victorys_emblem"
-        tools:ignore="UnknownId" />
 
     <Button
         android:id="@+id/button_login"
@@ -107,15 +127,40 @@
         android:id="@+id/textView1"
         android:layout_width="350dp"
         android:layout_height="68dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="184dp"
         android:fontFamily="@font/comfortaa_bold"
         android:gravity="center"
         android:text="Вход"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="242dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/victorys_emblem" />
+
+    <ImageButton
+        android:id="@+id/image_back"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="#FEB340"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/return_final" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

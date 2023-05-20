@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Nextmove2 extends AppCompatActivity {
@@ -45,8 +46,8 @@ public class Nextmove2 extends AppCompatActivity {
         question1.setText("1. " + Victorin2[0].question_text);
         question2.setText("2. " + Victorin2[1].question_text);
         question3.setText("3. " + Victorin2[2].question_text);
-        btn_goback = findViewById(R.id.go_back);
-        btn_goback.setOnClickListener(new View.OnClickListener() {
+        ImageButton return_back = findViewById(R.id.image_back9);
+        return_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Nextmove2.this, MainActivity.class);

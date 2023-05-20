@@ -6,61 +6,69 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <Button
-        android:id="@+id/go_back"
-        android:layout_width="148dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="40dp"
-        android:backgroundTint="#CFF1EE"
-        android:fontFamily="@font/comfortaa_bold"
-        android:text="Вернуться в начало"
-        android:textColor="#000000"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="400dp"
-        android:layout_height="725dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/victorys_main" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="206dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/victorys_emblem" />
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="725dp"
+                app:srcCompat="@drawable/victorys_main" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="400dp"
+                android:layout_height="725dp"
+                app:srcCompat="@drawable/victorys_main" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="725dp"
+                app:srcCompat="@drawable/victorys_main" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="400dp"
+                android:layout_height="725dp"
+                app:srcCompat="@drawable/victorys_main" />
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/button_alltypes"
-        android:layout_width="148dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="219dp"
+        android:layout_height="72dp"
         android:backgroundTint="#35D4A4"
         android:fontFamily="@font/comfortaa_bold"
         android:text="Личный кабинет"
         android:textColor="#FFFFFF"
         app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-        app:layout_constraintEnd_toStartOf="@+id/go_back"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="-10dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="-10dp"
         android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -85,15 +93,16 @@
                         android:id="@+id/imageView10"
                         android:layout_width="153dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
                         app:srcCompat="@drawable/russia" />
 
                     <Button
                         android:id="@+id/buttonVict2"
-                        android:layout_width="157dp"
-                        android:layout_height="73dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="20dp"
                         android:backgroundTint="#CFF1EE"
                         android:text="Познавай Россию!"
                         android:textColor="#35D4A4" />
@@ -121,10 +130,12 @@
 
                     <Button
                         android:id="@+id/buttonVict3"
-                        android:layout_width="157dp"
-                        android:layout_height="73dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="20dp"
                         android:backgroundTint="#CFF1EE"
                         android:text="Спряжения"
                         android:textColor="#35D4A4" />
@@ -145,17 +156,19 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/imageView11"
+                        android:id="@+id/imageView14"
                         android:layout_width="153dp"
                         android:layout_height="100dp"
-                        app:srcCompat="@drawable/english" />
+                        app:srcCompat="@drawable/english_vict" />
 
                     <Button
                         android:id="@+id/buttonVict4"
-                        android:layout_width="157dp"
-                        android:layout_height="73dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="20dp"
                         android:backgroundTint="#CFF1EE"
                         android:text="Чудеса английского"
                         android:textColor="#35D4A4" />
@@ -183,10 +196,12 @@
 
                     <Button
                         android:id="@+id/buttonVict1"
-                        android:layout_width="157dp"
+                        android:layout_width="match_parent"
                         android:layout_height="73dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="20dp"
                         android:backgroundTint="#CFF1EE"
                         android:text="Космос"
                         android:textColor="#35D4A4" />
@@ -197,5 +212,30 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="242dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/victorys_emblem" />
+
+    <ImageButton
+        android:id="@+id/image_back2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="#FEB340"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/return_final" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

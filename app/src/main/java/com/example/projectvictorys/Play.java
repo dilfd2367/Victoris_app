@@ -42,8 +42,7 @@ public class Play extends AppCompatActivity {
                 if (vict_id.trim().length() != 0) {
                     int number = Integer.parseInt(vict_id);
                     if (number < 1 || number > 4) {
-                        Toast toast = Toast.makeText(getApplicationContext(), "К сожалению, викторины с данным номером пока нет :( " +
-                                "Введите число от 1-4", Toast.LENGTH_SHORT);
+                        Toast toast = Toast.makeText(getApplicationContext(), "Введите число от 1-4", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, -100);
                         toast.show();
                     }

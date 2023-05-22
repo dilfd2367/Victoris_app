@@ -19,7 +19,7 @@
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="match_parent"
-                android:layout_height="725dp"
+                android:layout_height="726dp"
                 app:srcCompat="@drawable/victorys_main" />
 
             <ImageView
@@ -100,7 +100,7 @@
         android:layout_width="270dp"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/ic_launcher_background"
+        android:backgroundTint="#FEB340"
         android:fontFamily="@font/comfortaa_bold"
         android:insetBottom="15dp"
         android:text="Каталог игр"

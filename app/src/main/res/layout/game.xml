@@ -147,14 +147,16 @@
         android:id="@+id/button_next"
         android:layout_width="179dp"
         android:layout_height="61dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="120dp"
         android:backgroundTint="#CFF1EE"
         android:fontFamily="@font/comfortaa_bold"
         android:text="Дальше"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Category"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
         android:id="@+id/image_back7"

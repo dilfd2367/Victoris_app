@@ -56,6 +56,10 @@ public class Your_login extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         special.BUTTON_SCORE = 0;
+                        MainActivity.SCORE = "0";
+                        MainActivity.SCORE2 = "0";
+                        MainActivity.SCORE3 = "0";
+                        MainActivity.SCORE4 = "0";
                         Intent i = new Intent(Your_login.this,MainActivity.class);
                         startActivity(i);
                     }
